@@ -59,3 +59,8 @@ class MessageBuilder:
                 msg[field] = value
 
         return msg
+
+
+def build_message(template_name, context, loader, **defaults)
+    builder = MessageBuilder(loader)
+    return builder.render(template_name, context, **defaults)
