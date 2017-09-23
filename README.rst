@@ -1,9 +1,12 @@
-# email-stencils
+email-stencils
+==============
+
 Produce emails using Stencil templates.
 
-## Quick Start
+Quick Start
+-----------
 
-1. Create a ``stencil.TemplateLoader`` :
+1. Create a ``stencil.TemplateLoader``
 
    .. code-block:: python
 
@@ -11,9 +14,9 @@ Produce emails using Stencil templates.
 
       loader = stencil.TemplateLoader(['./templates/'])
 
-2. Write a template:
+2. Write a template
 
-.. code-block:: html
+   .. code-block:: html
 
 	{% block Subject %} Welcome to Nifty Service (TM) {% endblock %}
 	{% block body %}
@@ -32,7 +35,7 @@ Produce emails using Stencil templates.
 	Please click <a href="https://{{ activation_link }}">here</a> to activate your account!
 	{% endblock %}
 
-3. Generate the message:
+3. Generate the message
 
    .. code-block:: python
 
